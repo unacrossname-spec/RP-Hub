@@ -85,7 +85,7 @@
         let timedOut = false;
         const touch = () => {
             clearTimeout(timer);
-            timer = setTimeout(() => { timedOut = true; controller.abort(); }, 120000);
+            timer = setTimeout(() => { timedOut = true; controller.abort(); }, 600000);
         };
         if (options.signal?.aborted) abort();
         else options.signal?.addEventListener('abort', abort, { once: true });
